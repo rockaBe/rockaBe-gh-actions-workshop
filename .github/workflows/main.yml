@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: greet
         run: |
-          echo "Hello ${{ env.MY_AWS_REGION }}"
+          echo "Hello ${{ vars.MY_AWS_REGION }}"
           echo "Hello $GITHUB_ACTOR"
           
   custom_env:
@@ -18,6 +18,6 @@ jobs:
     steps:
       - name: greet
         run: |
-          echo "Hello ${{ env.MY_AWS_REGION }}"
+          echo "Hello ${{ vars.MY_AWS_REGION }}"
           echo "Hello $GITHUB_ACTOR"
           
