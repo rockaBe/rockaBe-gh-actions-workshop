@@ -1,0 +1,23 @@
+name: Main Workflow
+
+on:
+  workflow_dispatch
+
+jobs:
+  default:
+    runs-on: ubuntu-latest
+    steps:
+      - name: greet
+        run: |
+          echo "Hello $MY_AWS_REGION"
+          echo "Hello $GITHUB_ACTOR"
+          
+  custom_env:
+    runs-on: ubuntu-latest
+    environment: doc
+    steps:
+      - name: greet
+        run: |
+          echo "Hello $MY_AWS_REGION"
+          echo "Hello $GITHUB_ACTOR"
+          
