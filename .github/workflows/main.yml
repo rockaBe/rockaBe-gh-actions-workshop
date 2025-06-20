@@ -17,7 +17,6 @@ jobs:
     environment: doc
     steps:
       - name: greet
-        run: |
-          echo "Hello ${{ vars.MY_AWS_REGION }}"
-          echo "Hello $GITHUB_ACTOR"
-          
+        uses: ./.github/actions/access-env-var
+        with:
+          local-var: my-local-var
