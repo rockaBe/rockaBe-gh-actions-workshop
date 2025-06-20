@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: doc
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: greet
         uses: ./.github/actions/access-env-var
         with:
