@@ -10,9 +10,6 @@ runs:
     - name: Print local variable
       run: echo "Hello ${{ inputs.local-var }}"
       shell: bash
-    - name: Print MY_AWS_REGION
-      run: echo "Hello ${{ vars.MY_AWS_REGION }}"
-      shell: bash
     - name: Print GITHUB_ACTOR
       run: echo "Hello ${{ env.GITHUB_ACTOR }}"
       shell: bash
