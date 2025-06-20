@@ -20,4 +20,3 @@ jobs:
         uses: ./.github/actions/access-env-var
         with:
           local-var: my-local-var
-
